@@ -23,6 +23,7 @@ resource "opentelekomcloud_networking_network_v2" "selected" {
   admin_state_up = "true"
 }
 
+
 output "myOutput" {
   value = "${opentelekomcloud_networking_network_v2.selected.id}"
 }
